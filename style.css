@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Comfortaa", sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabeçalho */
+.conteiner-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Botões de navegação (Tela Inicial, Produtos, Sobre, Entrar) */
+.botoes-navegacao a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.botoes-navegacao a:hover {
+    background-color: #555;
+}
+
+/* Carrossel */
+.conteudo-principal {
+    max-width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.carrossel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.item-carrossel {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.primeiro-item img {
+    transform: scaleX(2.0);
+}
+
+.item-carrossel img {
+    width: 180vh;
+    height: 80vh;
+    object-fit: contain;
+}
+
+.item-carrossel.ativo {
+    display: block;
+}
+
+#botaoAnterior, #botaoProximo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    z-index: 15;
+}
+
+#botaoAnterior {
+    left: 10px;
+}
+
+#botaoProximo {
+    right: 10px;
+}
+
+/* Texto encima do Carrossel */
+.sobreposicao-texto {
+    position: absolute;
+    bottom: 245px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    z-index: 10;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.sobreposicao-texto h1 {
+    font-size: 100px;
+    margin: 0;
+}
+
+.sobreposicao-texto button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff711e;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sobreposicao-texto button:hover {
+    background-color: #ff5e00;
+}
+
+/* Texto Novidades */
+
+.novidades {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+}
+
+.novidades h2 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.novidades p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Produtos Novidades */
+
+.sessao-produtos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.cartao-produto {
+    width: 30%;
+    max-width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cartao-produto img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-top: 20px;
+}
+
+/* Informações dos Produtos */
+
+.info-produto {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-produto h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.info-produto p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #888;
+}
+
+/* Botão ver mais */
+
+.container-botoes {
+    text-align: center;
+}
+
+.botao-ver-mais {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f39c12;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-ver-mais:hover {
+    background-color: #e67e22;
+}
+
+/* Botões Categorias*/
+
+.sessao-categorias {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.sessao-categorias h2 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.container-categorias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+.botao-categoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.botao-categoria img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 60px;
+}
+
+.botao-categoria span {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Botões informações de compra */
+
+.sessao-informacoes {
+    background-color: #f0f0f0;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.sessao-informacoes h2 {
+    margin: 0 0 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.container-informacoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.item-info {
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.item-info img {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.item-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Rodape sobre a empresa */
+
+.sessao-rodape {
+    padding: 40px 20px;
+}
+
+.info-empresa, .info-contato {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.info-empresa h2, .info-contato h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.info-empresa h2 {
+    margin-bottom: 20px;
+}
+
+.info-contato h2 {
+    margin-top: 40px;
+}
+
+.info-empresa p, .info-contato p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+.redes-sociais {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.redes-sociais h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.icone-social {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.icone-social img {
+    width: 40px;
+    transition: opacity 0.3s ease;
+}
+
+.icone-social img:hover {
+    opacity: 0.8;
+}

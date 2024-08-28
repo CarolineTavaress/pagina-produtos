@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Loja Virtual</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="conteiner-cabecalho">
+            <div class="logo">Logo</div>
+            <nav class="botoes-navegacao">
+                <a href="#">Tela Inicial</a>
+                <a href="#">Produtos</a>
+                <a href="#">Sobre</a>
+                <a href="#">Entrar</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Nova Coleção (conteudo-principal) -->
+
+    <div class="conteudo-principal">
+        <div id="carrossel" class="carrossel">
+            <div class="item-carrossel primeiro-item">
+                <img src="imagens/bolsas.jpg" alt="Imagem Local">
+                <div class="sobreposicao-texto">
+                    <h1>Nova Coleção</h1>
+                    <button>Comprar Agora</button>
+                </div>
+            </div>
+            <div class="item-carrossel">
+                <img src="" alt="Produto da API" class="imagem-api">
+            </div>
+            <div class="item-carrossel">
+                <img src="" alt="Produto da API" class="imagem-api">
+            </div>
+            <div class="item-carrossel">
+                <img src="" alt="Produto da API" class="imagem-api">
+            </div>
+            <div class="item-carrossel">
+                <img src="" alt="Produto da API" class="imagem-api">
+            </div>
+        </div>
+        <button id="botaoAnterior"><</button>
+        <button id="botaoProximo">></button>
+    </div>
+
+    <!-- Campo Novidades -->
+
+    <div class="novidades">
+        <h2>Novidades</h2>
+        <p>Confira os últimos produtos que acabaram de chegar!</p>
+    </div>
+
+    <div class="sessao-produtos">
+        <div class="cartao-produto">
+            <img src="" alt="Produto da API" class="imagem-api">
+            <div class="info-produto">
+                <h3 class="titulo-produto"></h3>
+                <p class="preco-produto"></p>
+            </div>
+        </div>
+        <div class="cartao-produto">
+            <img src="" alt="Produto da API" class="imagem-api">
+            <div class="info-produto">
+                <h3 class="titulo-produto"></h3>
+                <p class="preco-produto"></p>
+            </div>
+        </div>
+        <div class="cartao-produto">
+            <img src="" alt="Produto da API" class="imagem-api">
+            <div class="info-produto">
+                <h3 class="titulo-produto"></h3>
+                <p class="preco-produto"></p>
+            </div>
+        </div>
+        <div class="cartao-produto">
+            <img src="" alt="Produto da API" class="imagem-api">
+            <div class="info-produto">
+                <h3 class="titulo-produto"></h3>
+                <p class="preco-produto"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-botoes">
+        <button class="botao-ver-mais">Ver Mais</button>
+    </div>
+
+    <!-- Campo categorias -->
+
+    <div class="sessao-categorias">
+        <h2>Categorias</h2>
+        <div id="container-categorias" class="container-categorias">
+        </div>
+    </div>
+
+    <!-- Campo informações de compra -->
+
+    <div class="sessao-informacoes">
+        <h2>O que oferecemos</h2>
+        <div class="container-informacoes">
+            <div class="item-info">
+                <img src="imagens/escudo.png" alt="Pagamentos Seguros">
+                <p>Compras Seguras</p>
+            </div>
+            <div class="item-info">
+                <img src="imagens/gratis.png" alt="Fretes e Devoluções Grátis">
+                <p>Fretes e Devoluções Grátis</p>
+            </div>
+            <div class="item-info">
+                <img src="imagens/fone-de-ouvido.png" alt="24h de Suporte">
+                <p>24h de Suporte</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodape sobre a empresa -->
+
+    <div class="sessao-rodape">
+        <div class="info-empresa">
+            <h2>Sobre a Empresa</h2>
+            <p>Somos uma empresa líder em inovação e qualidade. Com mais de 10 anos de experiência no mercado, oferecemos produtos de alta qualidade e serviços excepcionais para nossos clientes.</p>
+        </div>
+    
+        <div class="info-contato">
+            <h2>Contatos</h2>
+            <p>Email: contato@empresa.com</p>
+            <p>Telefone: (11) 1234-5678</p>
+            <p>Endereço: Rua Exemplo, 123 - Cidade, Estado - CEP 00000-000</p>
+        </div>
+    
+        <div class="redes-sociais">
+            <h2>Redes Sociais</h2>
+            <a href="#" class="icone-social"><img src="imagens/facebook.png" alt="Facebook"></a>
+            <a href="#" class="icone-social"><img src="imagens/twitter.png" alt="X"></a>
+            <a href="#" class="icone-social"><img src="imagens/instagram.png" alt="Instagram"></a>
+            <a href="#" class="icone-social"><img src="imagens/linkedin.png" alt="LinkedIn"></a>
+        </div>
+    </div>
+
+    <script src="index.js" defer></script>
+</body>
+</html>
